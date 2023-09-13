@@ -153,7 +153,7 @@ if __name__ == "__main__":
             # TODO completar modificaciones para el laboratorio 4
             size = input("Indique tamaño de la muestra: ")
             result = controller.sortBooks(control, int(size))
-            delta_time = f"{result:.3f}"
+            delta_time = f"{result[0]:.3f}"
             sorted_list=result[1]
             print("Para", size, "elementos, delta tiempo:",str(delta_time))
             printSortResults(sorted_list)
